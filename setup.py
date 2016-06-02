@@ -53,6 +53,9 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
+    entry_points={'console_scripts': [
+        'nginxreloadin = nginx_reloader.nginx_reloader:main',
+    ]},
     test_suite='tests',
     tests_require=test_requirements
 )
